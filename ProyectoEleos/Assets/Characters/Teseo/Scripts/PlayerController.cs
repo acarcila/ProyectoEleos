@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Range(0, .3f)] private float m_MovementSmoothing = 0.05f;
+    [SerializeField] private Animator animator;
+    [SerializeField] private RuntimeAnimatorController animatorController;
+    [SerializeField] private RuntimeAnimatorController animatorControllerLeft;
+
     private Rigidbody2D rigidBody;
     private Vector3 m_Velocity = Vector3.zero;
-    [Range(0, .3f)] private float m_MovementSmoothing = 0.05f;
 
     float horizontalMove = 0f;
     public float runSpeed = 40f;
 
     public float jumpForce;
     private bool isGrounded = false;
+    private bool isFacingRight = true;
     
     private void Awake()
     {
@@ -21,7 +26,19 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        float inputMovement = Input.GetAxisRaw("Horizontal");
+        horizontalMove = inputMovement * runSpeed;
+
+        if(inputMovement > 0 && !isFacingRight)
+        {
+            Debug.Log("girar derecha");
+            flip();
+        }
+        else if(inputMovement < 0 && isFacingRight)
+        {
+            Debug.Log("girar izquierda");
+            flip();
+        }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -32,7 +49,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move(horizontalMove * Time.fixedDeltaTime);
+        move(horizontalMove * Time.fixedDeltaTime);
        
     }
 
@@ -41,10 +58,26 @@ public class PlayerController : MonoBehaviour
         this.isGrounded = isGrounded;
     }
 
-    public void Move(float move)
+    public void move(float move)
     {
         Vector3 targetVelocity = new Vector2(move * 10f, rigidBody.velocity.y);
         rigidBody.velocity = Vector3.SmoothDamp(rigidBody.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+    }
+
+    public void flip()
+    {
+        if(isFacingRight)
+        {
+            animator.runtimeAnimatorController = animatorControllerLeft;
+
+            isFacingRight = false;
+        }
+        else
+        {
+            animator.runtimeAnimatorController = animatorController;
+
+            isFacingRight = true;
+        }
     }
 
 }
