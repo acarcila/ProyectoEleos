@@ -4,17 +4,49 @@ using UnityEngine;
 
 public class StatsController : MonoBehaviour
 {
-    [Header("Health Settings")]
-    public string name;
-    // Start is called before the first frame update
-    void Start()
+    private int health;
+    private int maxHealth;
+    private int energy;
+    private int maxEnergy;
+
+    public void setHealth(int health)
     {
-        
+        this.health = health;
     }
 
-    // Update is called once per frame
-    void Update()
+    public int getHealth()
     {
-        
+        return health;
     }
+
+    public void setMaxHealth(int maxHealth)
+    {
+        this.maxHealth = maxHealth;
+    }
+
+    public int getMaxHealth()
+    {
+        return maxHealth;
+    }
+
+    public void setEnergy(int energy)
+    {
+        this.energy = energy;
+    }
+
+    public int getEnergy()
+    {
+        return energy;
+    }
+
+    public void setMaxEnergy(int maxEnergy)
+    {
+        this.maxEnergy = maxEnergy;
+    }
+
+    public int getMaxEnergy()
+    {
+        return maxEnergy;
+    }
+
 }
