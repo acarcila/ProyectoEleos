@@ -96,6 +96,7 @@ public class StatsController : MonoBehaviour
 
         if (health <= 0)
         {
+            health = 0;
             die();
         }
     }
@@ -136,6 +137,10 @@ public class StatsController : MonoBehaviour
         if (damage > 0)
         {
             damage -= valueDecrease;
+        }
+        if (damage <= 0)
+        {
+            damage = 0;
         }
     }
 
