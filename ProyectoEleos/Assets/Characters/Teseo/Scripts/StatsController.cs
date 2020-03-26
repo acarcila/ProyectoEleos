@@ -4,26 +4,16 @@ using UnityEngine;
 
 public class StatsController : MonoBehaviour
 {
-    private int health;
-    private int maxHealth;
-    private int energy;
-    private int maxEnergy;
-    private int damage;
-    private float tiempo;
-
-    private void Start()
-    {
-        health = 50;
-        maxHealth = 100;
-        energy = 50;
-        maxEnergy = 100;
-        damage = 50;
-    }
+    [SerializeField] private int health;
+    [SerializeField] private int maxHealth;
+    [SerializeField] private int energy;
+    [SerializeField] private int maxEnergy;
+    [SerializeField] private int damage;
+    private float tiempo; // borrar después
 
     // probar los métodos, solo cambiar el nombre del metodo, cada 5 seg se llama el metodo
     private void Update()
     {
-
         tiempo += Time.deltaTime;
 
         if (tiempo >= 4f)
@@ -84,11 +74,11 @@ public class StatsController : MonoBehaviour
         return damage;
     }
 
-    public void increaseHealth(int valueIncrease)
+    public void increaseHealth(int increaseValue)
     {
         if (health >= 0 && health <= maxHealth)
         {
-            health += valueIncrease;
+            health += increaseValue;
         }
 
         if (health >= maxHealth)
@@ -97,11 +87,11 @@ public class StatsController : MonoBehaviour
         }
     }
 
-    public void decreaseHealth(int valueDecrease)
+    public void decreaseHealth(int decreaseValue)
     {
         if (health > 0)
         {
-            health -= valueDecrease;
+            health -= decreaseValue;
         }
 
         if (health <= 0)
@@ -110,11 +100,11 @@ public class StatsController : MonoBehaviour
         }
     }
 
-    public void increaseEnergy(int valueIncrease)
+    public void increaseEnergy(int increaseValue)
     {
         if (energy >= 0 && energy <= maxEnergy)
         {
-            energy += valueIncrease;
+            energy += increaseValue;
         }
 
         if (energy > maxEnergy)
@@ -123,21 +113,22 @@ public class StatsController : MonoBehaviour
         }
     }
 
-    public void decreaseEnergy(int valueDecrease)
+    public void decreaseEnergy(int decreaseValue)
     {
         if (energy > 0)
         {
-            energy -= valueDecrease;
+            energy -= decreaseValue;
         }
         if (energy <= 0)
         {
+            energy = 0;
             Debug.Log("sin energía");
         }
     }
 
-    public void increaseDamage(int valueIncrease)
+    public void increaseDamage(int increaseValue)
     {
-        damage += valueIncrease;
+        damage += increaseValue;
     }
 
     public void decreaseDamage(int valueDecrease)
