@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 4508495896759593755}
   - component: {fileID: 4508495896759593752}
   - component: {fileID: 4508495896759593757}
+  - component: {fileID: 446796226}
   m_Layer: 0
   m_Name: Teseo
   m_TagString: Untagged
@@ -260,3 +261,20 @@ MonoBehaviour:
     type: 2}
   runSpeed: 40
   jumpForce: 300
+--- !u!114 &446796226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508495896759593748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e02da09a474fe94da1be29722d23f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  energy: 100
+  maxEnergy: 100
+  damage: 50

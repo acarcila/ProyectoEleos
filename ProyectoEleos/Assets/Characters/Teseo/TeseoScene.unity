@@ -183,6 +183,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e02da09a474fe94da1be29722d23f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  energy: 100
+  maxEnergy: 100
+  damage: 50
 --- !u!1 &642995303
 GameObject:
   m_ObjectHideFlags: 0
