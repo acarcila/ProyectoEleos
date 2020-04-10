@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671331546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13, y: -0.019, z: 0}
+  m_LocalPosition: {x: -0.043, y: -0.019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4508495896759593753}
@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 4508495896759593752}
   - component: {fileID: 4508495896759593757}
   - component: {fileID: 446796226}
+  - component: {fileID: 8525249280723165300}
   m_Layer: 0
   m_Name: Teseo
   m_TagString: Untagged
@@ -193,9 +194,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11455638, y: -0.18105322}
+  m_Offset: {x: -0.033175707, y: -0.34}
   serializedVersion: 2
-  m_Radius: 0.3199473
+  m_Radius: 0.15894139
 --- !u!61 &4508495896759593755
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -209,18 +210,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11455637, y: 0.17087583}
+  m_Offset: {x: -0.03337712, y: -0.16573593}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6378937, y: 0.6617516}
+  m_Size: {x: 0.3178829, y: 0.33310944}
   m_EdgeRadius: 0
 --- !u!50 &4508495896759593752
 Rigidbody2D:
@@ -241,7 +242,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &4508495896759593757
 MonoBehaviour:
@@ -262,6 +263,23 @@ MonoBehaviour:
   runSpeed: 40
   jumpForce: 300
 --- !u!114 &446796226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508495896759593748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e02da09a474fe94da1be29722d23f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  energy: 100
+  maxEnergy: 100
+  damage: 50
+--- !u!114 &8525249280723165300
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
