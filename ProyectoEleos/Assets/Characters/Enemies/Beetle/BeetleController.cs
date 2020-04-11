@@ -7,10 +7,13 @@ public class BeetleController : MonoBehaviour
     [SerializeField] private float movementSpeed;
     [Range(0, .3f)] private float m_MovementSmoothing = 0.05f;
     [SerializeField] private string playerTag;
-    
+
     private bool isFacingRight = false;
     private Rigidbody2D rigidBody;
     private Vector3 m_Velocity = Vector3.zero;
+
+    public PlayerController playerController;
+    public EnemyStatsController enemyStats;
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +41,9 @@ public class BeetleController : MonoBehaviour
     {
         Vector3 targetVelocity = new Vector3();
 
-        if(isFacingRight)
+        if (isFacingRight)
         {
-            targetVelocity = new Vector2(move * 10f, rigidBody.velocity.y);            
+            targetVelocity = new Vector2(move * 10f, rigidBody.velocity.y);
         }
         else
         {
@@ -60,11 +63,12 @@ public class BeetleController : MonoBehaviour
         gameObject.transform.localScale = desiredScale;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == playerTag)
+        if (collision.gameObject.tag == playerTag)
         {
             //hacer daño
+            playerController.takeDamage(enemyStats.getDamage());
         }
     }
 }
