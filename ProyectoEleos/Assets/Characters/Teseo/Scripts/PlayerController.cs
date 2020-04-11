@@ -6,8 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     [Range(0, .3f)] private float m_MovementSmoothing = 0.05f;
     [SerializeField] private Animator animator;
-    [SerializeField] private RuntimeAnimatorController animatorController;
-    [SerializeField] private RuntimeAnimatorController animatorControllerLeft;
     public StatsController statsController;
     public float runSpeed;
     public float jumpForce;
@@ -29,6 +27,8 @@ public class PlayerController : MonoBehaviour
     {
         float inputMovement = Input.GetAxisRaw("Horizontal");
         horizontalMove = inputMovement * runSpeed;
+
+        animator.SetFloat("movement", Mathf.Abs(inputMovement));
 
         if (inputMovement > 0 && !isFacingRight)
         {
@@ -86,13 +86,13 @@ public class PlayerController : MonoBehaviour
     {
         if (isFacingRight)
         {
-            animator.runtimeAnimatorController = animatorControllerLeft;
+            animator.SetBool("isLeft", true);
 
             isFacingRight = false;
         }
         else
         {
-            animator.runtimeAnimatorController = animatorController;
+            animator.SetBool("isLeft", false);
 
             isFacingRight = true;
         }
