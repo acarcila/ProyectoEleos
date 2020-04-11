@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 8277958919581168478}
   - component: {fileID: 8277958919581168473}
   - component: {fileID: 1854193448}
+  - component: {fileID: 1473076423}
   m_Layer: 0
   m_Name: BeetlePrefab
   m_TagString: Untagged
@@ -234,4 +235,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 4
-  playerTag: 
+  playerTag: Player
+  playerController: {fileID: 0}
+  enemyStats: {fileID: 1473076423}
+--- !u!114 &1473076423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8277958919581168472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6db9f0c99388e4fbfd6e01b62124a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+  damage: 15
