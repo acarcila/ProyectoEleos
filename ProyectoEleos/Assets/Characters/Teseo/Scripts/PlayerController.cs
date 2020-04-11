@@ -8,17 +8,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private RuntimeAnimatorController animatorController;
     [SerializeField] private RuntimeAnimatorController animatorControllerLeft;
+    public StatsController statsController;
+    public float runSpeed;
+    public float jumpForce;
+    public float coolDownInvincible;
 
     private Rigidbody2D rigidBody;
     private Vector2 m_Velocity = Vector2.zero;
-
-    float horizontalMove = 0f;
-    public float runSpeed = 40f;
-
-    public float jumpForce;
+    private float horizontalMove = 0f;
     private bool isGrounded = false;
     private bool isFacingRight = true;
-
+    private bool isInvincible = false;
+    private float invincibleTime;
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
@@ -44,6 +45,16 @@ public class PlayerController : MonoBehaviour
         {
             jump();
         }
+
+        if (isInvincible)
+        {
+            invincibleTime -= Time.deltaTime;
+
+            if (invincibleTime <= 0)
+            {
+                isInvincible = false;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -55,7 +66,7 @@ public class PlayerController : MonoBehaviour
     public void setIsGrounded(bool isGrounded)
     {
         this.isGrounded = isGrounded;
-        if(this.isGrounded)
+        if (this.isGrounded)
         {
             animator.SetBool("isGrounded", true);
         }
@@ -95,4 +106,14 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("isJumping");
     }
 
+    public void takeDamage(int damage)
+    {
+        if (!isInvincible)
+        {
+            statsController.decreaseHealth(damage);
+            isInvincible = true;
+            invincibleTime = coolDownInvincible;
+        }
+
+    }
 }
