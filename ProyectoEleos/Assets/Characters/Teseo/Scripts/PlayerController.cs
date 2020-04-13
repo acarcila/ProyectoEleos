@@ -46,6 +46,11 @@ public class PlayerController : MonoBehaviour
             jump();
         }
 
+        if(Input.GetButtonDown("Attack") && isGrounded)
+        {
+            attack();
+        }
+
         if (isInvincible)
         {
             invincibleTime -= Time.deltaTime;
@@ -104,6 +109,11 @@ public class PlayerController : MonoBehaviour
         isGrounded = false;
 
         animator.SetTrigger("isJumping");
+    }
+
+    public void attack()
+    {
+        animator.SetTrigger("attack");
     }
 
     public void takeDamage(int damage)

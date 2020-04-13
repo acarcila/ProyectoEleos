@@ -86,6 +86,48 @@ TextureImporter:
   - first:
       213: -8942732630017313714
     second: Teseo16Tileset_17
+  - first:
+      213: -7904108238417454171
+    second: Teseo16Tileset_10
+  - first:
+      213: 8808274151534873964
+    second: Teseo16Tileset_11
+  - first:
+      213: -9166100648814078185
+    second: Teseo16Tileset_12
+  - first:
+      213: 6119727987384916770
+    second: Teseo16Tileset_13
+  - first:
+      213: 7032232864736657808
+    second: Teseo16Tileset_14
+  - first:
+      213: -4134809540261040461
+    second: Teseo16Tileset_15
+  - first:
+      213: -3177035876442001365
+    second: Teseo16Tileset_16
+  - first:
+      213: -226082827487175754
+    second: Teseo16Tileset_17
+  - first:
+      213: 7995776088593114167
+    second: Teseo16Tileset_18
+  - first:
+      213: 8866526824699612441
+    second: Teseo16Tileset_19
+  - first:
+      213: -2668823577631350206
+    second: Teseo16Tileset_20
+  - first:
+      213: -5522417450300652347
+    second: Teseo16Tileset_21
+  - first:
+      213: 2188342331956543062
+    second: Teseo16Tileset_22
+  - first:
+      213: 5434701735681340036
+    second: Teseo16Tileset_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -199,7 +241,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -220,7 +262,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -241,7 +283,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -262,7 +304,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -283,7 +325,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -304,7 +346,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -325,7 +367,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -346,7 +388,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -367,7 +409,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -388,7 +430,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -409,6 +451,174 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab93e65f67fe4290800000000000000
+      internalID: -7904108238417454171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teseo16Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dcd7e2ca64d3a70800000000000000
+      internalID: 8808274151534873964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teseo16Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71795f326087bc080800000000000000
+      internalID: -9166100648814078185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teseo16Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b181a4e24ade450800000000000000
+      internalID: 6119727987384916770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teseo16Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091c4783882879160800000000000000
+      internalID: 7032232864736657808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teseo16Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be28da51a43e96c0800000000000000
+      internalID: -4134809540261040461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teseo16Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20b00af3b6e8e3d0800000000000000
+      internalID: -3177035876442001365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teseo16Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb9fc1cddaccdcf0800000000000000
+      internalID: -226082827487175754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teseo16Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -419,14 +629,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1853229570bda0d70800000000000000
-      internalID: 9010254829114766721
+      spriteID: 734a7283df3b6fe60800000000000000
+      internalID: 7995776088593114167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Teseo16Tileset_11
+      name: Teseo16Tileset_19
       rect:
         serializedVersion: 2
         x: 32
@@ -440,14 +650,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 677fd057675df3d60800000000000000
-      internalID: 7872245378413623158
+      spriteID: 91d41b19b2b3c0b70800000000000000
+      internalID: 8866526824699612441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Teseo16Tileset_12
+      name: Teseo16Tileset_20
       rect:
         serializedVersion: 2
         x: 64
@@ -461,35 +671,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab8c19bac0a4a5e10800000000000000
-      internalID: 2187141987320318138
+      spriteID: 242a81f981f66fad0800000000000000
+      internalID: -2668823577631350206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Teseo16Tileset_13
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 881c0c5cfdc83fda0800000000000000
-      internalID: -5912226993083989624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teseo16Tileset_14
+      name: Teseo16Tileset_21
       rect:
         serializedVersion: 2
         x: 0
@@ -503,14 +692,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8b9558bd8a9b0eb0800000000000000
-      internalID: -4752535048285742194
+      spriteID: 5c44965869e6c53b0800000000000000
+      internalID: -5522417450300652347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Teseo16Tileset_15
+      name: Teseo16Tileset_22
       rect:
         serializedVersion: 2
         x: 32
@@ -524,14 +713,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69b8a0113e1100c10800000000000000
-      internalID: 2017632300003134358
+      spriteID: 65e383fa1cd8e5e10800000000000000
+      internalID: 2188342331956543062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Teseo16Tileset_16
+      name: Teseo16Tileset_23
       rect:
         serializedVersion: 2
         x: 64
@@ -545,29 +734,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7a476982934a4210800000000000000
-      internalID: 1317940137608825470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Teseo16Tileset_17
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e44f58abd0805e380800000000000000
-      internalID: -8942732630017313714
+      spriteID: 4823c7f2f60fb6b40800000000000000
+      internalID: 5434701735681340036
       vertices: []
       indices: 
       edges: []
