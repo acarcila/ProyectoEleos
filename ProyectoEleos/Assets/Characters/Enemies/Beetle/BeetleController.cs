@@ -2,29 +2,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeetleController : MonoBehaviour
+public class BeetleController : CharacterController
 {
     [SerializeField] private float movementSpeed;
     [Range(0, .3f)] private float m_MovementSmoothing = 0.05f;
     [SerializeField] private string playerTag;
+    public PlayerController playerController;
+    public StatsController statsController;
+    public float coolDownInvincible;
 
     private bool isFacingRight = false;
     private Rigidbody2D rigidBody;
     private Vector3 m_Velocity = Vector3.zero;
+    private bool isInvincible = false;
+    private float invincibleTime;
 
-    public PlayerController playerController;
-    public EnemyStatsController enemyStats;
-
-    // Start is called before the first frame update
-    void Start()
+    public override void toStart()
     {
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    public override void toUpdate()
+    {
+        if (isInvincible)
+        {
+            invincibleTime -= Time.deltaTime;
+
+            if (invincibleTime <= 0)
+            {
+                isInvincible = false;
+            }
+        }
+    }
+
+    public override void toFixedUpdate()
     {
         move(movementSpeed * Time.deltaTime);
+    }
+
+    public override void takeDamage(int damage)
+    {
+        if (!isInvincible)
+        {
+            statsController.decreaseHealth(damage);
+            isInvincible = true;
+            invincibleTime = coolDownInvincible;
+        }
     }
 
     public bool getIsFacingRight()
@@ -61,14 +84,5 @@ public class BeetleController : MonoBehaviour
         desiredScale.x *= -1;
 
         gameObject.transform.localScale = desiredScale;
-    }
-
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == playerTag)
-        {
-            //hacer daño
-            playerController.takeDamage(enemyStats.getDamage());
-        }
     }
 }
