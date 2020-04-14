@@ -14,14 +14,6 @@ public class StatsController : MonoBehaviour
     // probar los métodos, solo cambiar el nombre del metodo, cada 5 seg se llama el metodo
     private void Update()
     {
-        tiempo += Time.deltaTime;
-
-        if (tiempo >= 4f)
-        {
-            decreaseDamage(5);
-            Debug.Log(damage);
-            tiempo = 0;
-        }
     }
 
     public void setHealth(int health)

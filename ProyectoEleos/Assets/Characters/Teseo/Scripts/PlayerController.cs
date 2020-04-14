@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : CharacterController
 {
     [Range(0, .3f)] private float m_MovementSmoothing = 0.05f;
     [SerializeField] private Animator animator;
@@ -23,7 +23,11 @@ public class PlayerController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    public override void toStart()
+    {
+    }
+
+    public override void toUpdate()
     {
         float inputMovement = Input.GetAxisRaw("Horizontal");
         horizontalMove = inputMovement * runSpeed;
@@ -46,7 +50,7 @@ public class PlayerController : MonoBehaviour
             jump();
         }
 
-        if(Input.GetButtonDown("Attack") && isGrounded)
+        if (Input.GetButtonDown("Attack") && isGrounded)
         {
             attack();
         }
@@ -62,7 +66,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    public override void toFixedUpdate()
     {
         move(horizontalMove * Time.fixedDeltaTime);
 
@@ -116,7 +120,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("attack");
     }
 
-    public void takeDamage(int damage)
+    public override void takeDamage(int damage)
     {
         if (!isInvincible)
         {
