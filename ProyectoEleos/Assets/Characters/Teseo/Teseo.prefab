@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 4508495896759593752}
   - component: {fileID: 4508495896759593757}
   - component: {fileID: 446796226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Teseo
   m_TagString: Player
   m_Icon: {fileID: 0}
