@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class WallDetection : MonoBehaviour
 {
-    [SerializeField] private string playerTag;
+    [SerializeField] private LayerMask layerMask;
     [SerializeField] private BeetleController beetleController;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag != playerTag) 
+        if (layerMask == (layerMask | (1 << collision.gameObject.layer))) 
         {
             beetleController.flip();
         }
