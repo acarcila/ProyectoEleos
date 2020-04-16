@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d436850ea912c8e41b6fd85be8e3a5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4
+  movementSpeed: 2.5
   playerTag: Player
   playerController: {fileID: 0}
   statsController: {fileID: 1048428398}
