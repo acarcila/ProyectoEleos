@@ -370,10 +370,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2.5
-  playerTag: Player
-  playerController: {fileID: 0}
   statsController: {fileID: 1048428398}
   coolDownInvincible: 0.5
+  animator: {fileID: 9096156589783889735}
+  deathDelay: 2
+  relatedObjects:
+  - {fileID: 788541489}
+  - {fileID: 1774788443}
 --- !u!114 &1048428398
 MonoBehaviour:
   m_ObjectHideFlags: 0
