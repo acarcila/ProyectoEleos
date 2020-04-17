@@ -6,38 +6,50 @@ public class BeetleController : CharacterController
 {
     [SerializeField] private float movementSpeed;
     [Range(0, .3f)] private float m_MovementSmoothing = 0.05f;
-    [SerializeField] private string playerTag;
-    public PlayerController playerController;
-    public StatsController statsController;
-    public float coolDownInvincible;
+    [SerializeField] private StatsController statsController;
+    [SerializeField] private float coolDownInvincible;
+    [SerializeField] private Animator animator;
+    [SerializeField] private float deathDelay;
+    [SerializeField] private List<GameObject> relatedObjects;
 
     private bool isFacingRight = false;
     private Rigidbody2D rigidBody;
     private Vector3 m_Velocity = Vector3.zero;
     private bool isInvincible = false;
     private float invincibleTime;
+    private bool isAlive;
 
     public override void toStart()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        
+        isAlive = true;
     }
 
     public override void toUpdate()
     {
-        if (isInvincible)
+        if (isAlive)
         {
-            invincibleTime -= Time.deltaTime;
-
-            if (invincibleTime <= 0)
+            if (isInvincible)
             {
-                isInvincible = false;
+                invincibleTime -= Time.deltaTime;
+
+                if (invincibleTime <= 0)
+                {
+                    isInvincible = false;
+                }
             }
+
+            handleDeath();
         }
     }
 
     public override void toFixedUpdate()
     {
-        move(movementSpeed * Time.deltaTime);
+        if (isAlive)
+        {
+            move(movementSpeed * Time.deltaTime);
+        }
     }
 
     public override void takeDamage(int damage)
@@ -84,5 +96,21 @@ public class BeetleController : CharacterController
         desiredScale.x *= -1;
 
         gameObject.transform.localScale = desiredScale;
+    }
+
+    public void handleDeath()
+    {
+        if (statsController.getHealth() <= 0)
+        {
+            isAlive = false;
+
+            foreach(GameObject element in relatedObjects)
+            {
+                element.SetActive(false);
+            }
+
+            animator.SetTrigger("die");
+            Destroy(gameObject, deathDelay);
+        }
     }
 }

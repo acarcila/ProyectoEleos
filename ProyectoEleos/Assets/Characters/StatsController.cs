@@ -89,7 +89,6 @@ public class StatsController : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            die();
         }
     }
 
@@ -134,10 +133,5 @@ public class StatsController : MonoBehaviour
         {
             damage = 0;
         }
-    }
-
-    public void die()
-    {
-        Debug.Log("Mori");
     }
 }
