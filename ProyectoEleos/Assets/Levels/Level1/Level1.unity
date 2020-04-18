@@ -1884,7 +1884,7 @@ Transform:
   - {fileID: 115574579}
   - {fileID: 964324646}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &214455781
 GameObject:
@@ -1930,16 +1930,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teseo
       objectReference: {fileID: 0}
-    - target: {fileID: 4508495896759593750, guid: 9acc6fac2ad60c2498c76b182980eabf,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -247159029
-      objectReference: {fileID: 0}
-    - target: {fileID: 4508495896759593750, guid: 9acc6fac2ad60c2498c76b182980eabf,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4508495896759593753, guid: 9acc6fac2ad60c2498c76b182980eabf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1978,7 +1968,7 @@ PrefabInstance:
     - target: {fileID: 4508495896759593753, guid: 9acc6fac2ad60c2498c76b182980eabf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4508495896759593753, guid: 9acc6fac2ad60c2498c76b182980eabf,
         type: 3}
@@ -2407,21 +2397,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeetlePrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 8277958919581168476, guid: 4f63bf10f440903448e9399b99e254a8,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8277958919581168476, guid: 4f63bf10f440903448e9399b99e254a8,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -247159029
-      objectReference: {fileID: 0}
-    - target: {fileID: 8277958919581168476, guid: 4f63bf10f440903448e9399b99e254a8,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8277958919581168477, guid: 4f63bf10f440903448e9399b99e254a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2460,7 +2435,7 @@ PrefabInstance:
     - target: {fileID: 8277958919581168477, guid: 4f63bf10f440903448e9399b99e254a8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8277958919581168477, guid: 4f63bf10f440903448e9399b99e254a8,
         type: 3}

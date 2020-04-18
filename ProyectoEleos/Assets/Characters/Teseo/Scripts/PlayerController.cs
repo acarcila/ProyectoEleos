@@ -9,6 +9,7 @@ public class PlayerController : CharacterController
     public StatsController statsController;
     public float runSpeed;
     public float jumpForce;
+    public float dashForce;
     public float coolDownInvincible;
     public GameObject waterBlessingPrefab;
     public Vector2 waterBlessingOffset;
@@ -52,6 +53,11 @@ public class PlayerController : CharacterController
         if (Input.GetButtonDown("Jump") && (isGrounded || jumpCount > 0))
         {
             jump();
+        }
+
+        if (Input.GetButtonDown("Dash"))
+        {
+            dash();
         }
 
         if (Input.GetButtonDown("Attack") && isGrounded)
@@ -128,10 +134,22 @@ public class PlayerController : CharacterController
         rigidBody.velocity = Vector2.Scale(rigidBody.velocity, new Vector2(1, 0));
         rigidBody.AddForce(new Vector2(0f, jumpForce));
         isGrounded = false;
-        Debug.Log(jumpCount);
         jumpCount--;
 
         animator.SetTrigger("isJumping");
+    }
+
+    public void dash()
+    {
+        rigidBody.velocity = Vector2.Scale(rigidBody.velocity, new Vector2(0, 1));
+        if(isFacingRight)
+        {
+            rigidBody.AddForce(new Vector2(dashForce, 0));
+        }
+        else
+        {
+            rigidBody.AddForce(new Vector2(-dashForce, 0));
+        }
     }
 
     public void attack()
