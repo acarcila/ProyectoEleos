@@ -22,6 +22,8 @@ public class PlayerController : CharacterController
     private bool isFacingRight = true;
     private bool isInvincible = false;
     private float invincibleTime;
+    private int jumpCount;
+
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
@@ -40,16 +42,14 @@ public class PlayerController : CharacterController
 
         if (inputMovement > 0 && !isFacingRight)
         {
-            Debug.Log("girar derecha");
             flip();
         }
         else if (inputMovement < 0 && isFacingRight)
         {
-            Debug.Log("girar izquierda");
             flip();
         }
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && (isGrounded || jumpCount > 0))
         {
             jump();
         }
@@ -89,8 +89,10 @@ public class PlayerController : CharacterController
     public void setIsGrounded(bool isGrounded)
     {
         this.isGrounded = isGrounded;
+
         if (this.isGrounded)
         {
+            this.jumpCount = 2;
             animator.SetBool("isGrounded", true);
         }
         else
@@ -123,8 +125,11 @@ public class PlayerController : CharacterController
 
     public void jump()
     {
+        rigidBody.velocity = Vector2.Scale(rigidBody.velocity, new Vector2(1, 0));
         rigidBody.AddForce(new Vector2(0f, jumpForce));
         isGrounded = false;
+        Debug.Log(jumpCount);
+        jumpCount--;
 
         animator.SetTrigger("isJumping");
     }
