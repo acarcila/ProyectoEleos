@@ -340,6 +340,9 @@ MonoBehaviour:
   runSpeed: 40
   jumpForce: 300
   coolDownInvincible: 1
+  waterBlessingPrefab: {fileID: 5727700367377517160, guid: 118109a798404554f96ea09fd93092a7,
+    type: 3}
+  waterBlessingOffset: 1.4
 --- !u!114 &446796226
 MonoBehaviour:
   m_ObjectHideFlags: 0
