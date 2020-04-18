@@ -11,7 +11,9 @@ public class PlayerController : CharacterController
     public float jumpForce;
     public float coolDownInvincible;
     public GameObject waterBlessingPrefab;
-    public float waterBlessingOffset;
+    public Vector2 waterBlessingOffset;
+    public GameObject thunderBlessingPrefab;
+    public Vector2 thunderBlessingOffset;
 
     private Rigidbody2D rigidBody;
     private Vector2 m_Velocity = Vector2.zero;
@@ -60,6 +62,11 @@ public class PlayerController : CharacterController
         if (Input.GetButtonDown("WaterBlessing") && isGrounded)
         {
             activateWaterBlessing();
+        }
+
+        if (Input.GetButtonDown("ThunderBlessing") && isGrounded)
+        {
+            activateThunderBlessing();
         }
 
         if (isInvincible)
@@ -132,11 +139,26 @@ public class PlayerController : CharacterController
         GameObject prefab = Object.Instantiate(waterBlessingPrefab, transform.position, transform.rotation, null);
         if(isFacingRight)
         {
-            prefab.transform.Translate(waterBlessingOffset, 0, 0);
+            prefab.transform.Translate(waterBlessingOffset.x, waterBlessingOffset.y, 0);
         }
         else
         {
-            prefab.transform.Translate(-waterBlessingOffset, 0, 0);
+            prefab.transform.Translate(-waterBlessingOffset.x, waterBlessingOffset.y, 0);
+            prefab.transform.localScale = Vector3.Scale(prefab.transform.localScale, new Vector3(-1, 1, 1));
+        }
+
+    }
+
+    public void activateThunderBlessing()
+    {
+        GameObject prefab = Object.Instantiate(thunderBlessingPrefab, transform.position, transform.rotation, null);
+        if(isFacingRight)
+        {
+            prefab.transform.Translate(thunderBlessingOffset.x, thunderBlessingOffset.y, 0);
+        }
+        else
+        {
+            prefab.transform.Translate(-thunderBlessingOffset.x, thunderBlessingOffset.y, 0);
             prefab.transform.localScale = Vector3.Scale(prefab.transform.localScale, new Vector3(-1, 1, 1));
         }
 
