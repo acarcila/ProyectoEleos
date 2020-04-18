@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: ba93000c75a1d9f4e98c08833b5b1d31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6568866997763307750
+    second: HieroglyphTileset_0
+  - first:
+      213: 5809538706817244766
+    second: HieroglyphTileset_0
+  - first:
+      213: 7023071018237075051
+    second: HieroglyphTileset_1
+  - first:
+      213: -4425697374248116435
+    second: HieroglyphTileset_2
+  - first:
+      213: -2022623799392313562
+    second: HieroglyphTileset_3
+  - first:
+      213: 3073853065882077780
+    second: HieroglyphTileset_4
+  - first:
+      213: 1152496674126116678
+    second: HieroglyphTileset_5
+  - first:
+      213: 1999793879385139955
+    second: HieroglyphTileset_6
+  - first:
+      213: 6164593865387523800
+    second: HieroglyphTileset_7
+  - first:
+      213: 222385395714007748
+    second: HieroglyphTileset_8
+  - first:
+      213: 8232149538387316323
+    second: HieroglyphTileset_9
+  - first:
+      213: 8088749074480026411
+    second: HieroglyphTileset_10
+  - first:
+      213: 2778345917466986528
+    second: HieroglyphTileset_11
+  - first:
+      213: 906107776825575987
+    second: HieroglyphTileset_12
+  - first:
+      213: -3914447614487659678
+    second: HieroglyphTileset_13
+  - first:
+      213: -3520955278348365609
+    second: HieroglyphTileset_14
+  - first:
+      213: -195258470010086355
+    second: HieroglyphTileset_15
+  - first:
+      213: 8972279314545278577
+    second: HieroglyphTileset_1
+  - first:
+      213: 7760941304798751261
+    second: HieroglyphTileset_2
+  - first:
+      213: 2215432821611835311
+    second: HieroglyphTileset_3
+  - first:
+      213: -58664951931890570
+    second: HieroglyphTileset_4
+  - first:
+      213: 1335650453818453832
+    second: HieroglyphTileset_5
+  - first:
+      213: 5576050340194119161
+    second: HieroglyphTileset_6
+  - first:
+      213: 4812722492011984951
+    second: HieroglyphTileset_7
+  - first:
+      213: -8507793342362202899
+    second: HieroglyphTileset_8
+  - first:
+      213: -35790276516298660
+    second: HieroglyphTileset_9
+  - first:
+      213: 6366522027450322508
+    second: HieroglyphTileset_10
+  - first:
+      213: 7081072112497278580
+    second: HieroglyphTileset_11
+  - first:
+      213: 3125690930534518841
+    second: HieroglyphTileset_12
+  - first:
+      213: -858777978797609583
+    second: HieroglyphTileset_13
+  - first:
+      213: 3500962390431283110
+    second: HieroglyphTileset_14
+  - first:
+      213: 3738389361609217443
+    second: HieroglyphTileset_15
+  - first:
+      213: 5953243883803858865
+    second: HieroglyphBackTileset_0
+  - first:
+      213: 4166354051987487055
+    second: HieroglyphBackTileset_1
+  - first:
+      213: -1220617751377066929
+    second: HieroglyphBackTileset_2
+  - first:
+      213: -7940408288769607581
+    second: HieroglyphBackTileset_3
+  - first:
+      213: 8241274344330390479
+    second: HieroglyphBackTileset_4
+  - first:
+      213: 6118078899052153403
+    second: HieroglyphBackTileset_5
+  - first:
+      213: 3159318316890606405
+    second: HieroglyphBackTileset_6
+  - first:
+      213: -654352515392411115
+    second: HieroglyphBackTileset_7
+  - first:
+      213: -3969205372840503596
+    second: HieroglyphBackTileset_8
+  - first:
+      213: -2885446708083474206
+    second: HieroglyphBackTileset_9
+  - first:
+      213: 6926836641512551782
+    second: HieroglyphBackTileset_10
+  - first:
+      213: 4384968976096259093
+    second: HieroglyphBackTileset_11
+  - first:
+      213: 6324076147464598067
+    second: HieroglyphBackTileset_12
+  - first:
+      213: 4946807633553720282
+    second: HieroglyphBackTileset_13
+  - first:
+      213: 3876850568382105667
+    second: HieroglyphBackTileset_14
+  - first:
+      213: 6035395288745425321
+    second: HieroglyphBackTileset_15
+  - first:
+      213: 3784388106445052877
+    second: HieroglyphBackTileset_0
+  - first:
+      213: -2199806200435057469
+    second: HieroglyphBackTileset_1
+  - first:
+      213: 9092041460678962470
+    second: HieroglyphBackTileset_2
+  - first:
+      213: 4855371892606622577
+    second: HieroglyphBackTileset_3
+  - first:
+      213: -4765469246512895426
+    second: HieroglyphBackTileset_4
+  - first:
+      213: -5619948689996808573
+    second: HieroglyphBackTileset_5
+  - first:
+      213: -6542893580618787191
+    second: HieroglyphBackTileset_6
+  - first:
+      213: 7795105483412723432
+    second: HieroglyphBackTileset_7
+  - first:
+      213: 1506176070012336810
+    second: HieroglyphBackTileset_8
+  - first:
+      213: 5103940848804516934
+    second: HieroglyphBackTileset_9
+  - first:
+      213: -1916214305002865730
+    second: HieroglyphBackTileset_10
+  - first:
+      213: 7277474383492990883
+    second: HieroglyphBackTileset_11
+  - first:
+      213: 7880279952455729183
+    second: HieroglyphBackTileset_12
+  - first:
+      213: -5547382094591918693
+    second: HieroglyphBackTileset_13
+  - first:
+      213: 2690481804645486819
+    second: HieroglyphBackTileset_14
+  - first:
+      213: -950782575241460231
+    second: HieroglyphBackTileset_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbded8aee8d48430800000000000000
+      internalID: 3784388106445052877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccdd507ae7b871e0800000000000000
+      internalID: -2199806200435057469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62da4ea698b6d2e70800000000000000
+      internalID: 9092041460678962470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bdb3fe20fb16340800000000000000
+      internalID: 4855371892606622577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3aec8508f6adddb0800000000000000
+      internalID: -4765469246512895426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e71d4317ee102b0800000000000000
+      internalID: -5619948689996808573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986980444f8f235a0800000000000000
+      internalID: -6542893580618787191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6d38d0327cd2c60800000000000000
+      internalID: 7795105483412723432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa7746d72307e410800000000000000
+      internalID: 1506176070012336810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644599ff827d4d640800000000000000
+      internalID: 5103940848804516934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb38ccfd3d3865e0800000000000000
+      internalID: -1916214305002865730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7ca12e468cef460800000000000000
+      internalID: 7277474383492990883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1081c08dd06c5d60800000000000000
+      internalID: 7880279952455729183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d7c72506db303b0800000000000000
+      internalID: -5547382094591918693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0db8052f2865520800000000000000
+      internalID: 2690481804645486819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HieroglyphBackTileset_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f50a1809442ec2f0800000000000000
+      internalID: -950782575241460231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
