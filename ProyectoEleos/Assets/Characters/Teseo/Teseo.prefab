@@ -339,6 +339,7 @@ MonoBehaviour:
   statsController: {fileID: 446796226}
   runSpeed: 40
   jumpForce: 300
+  dashForce: 2000
   coolDownInvincible: 1
   waterBlessingPrefab: {fileID: 5727700367377517160, guid: 118109a798404554f96ea09fd93092a7,
     type: 3}
