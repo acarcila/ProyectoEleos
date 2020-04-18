@@ -10,6 +10,8 @@ public class PlayerController : CharacterController
     public float runSpeed;
     public float jumpForce;
     public float coolDownInvincible;
+    public GameObject waterBlessingPrefab;
+    public float waterBlessingOffset;
 
     private Rigidbody2D rigidBody;
     private Vector2 m_Velocity = Vector2.zero;
@@ -53,6 +55,11 @@ public class PlayerController : CharacterController
         if (Input.GetButtonDown("Attack") && isGrounded)
         {
             attack();
+        }
+
+        if (Input.GetButtonDown("WaterBlessing") && isGrounded)
+        {
+            activateWaterBlessing();
         }
 
         if (isInvincible)
@@ -118,6 +125,21 @@ public class PlayerController : CharacterController
     public void attack()
     {
         animator.SetTrigger("attack");
+    }
+
+    public void activateWaterBlessing()
+    {
+        GameObject prefab = Object.Instantiate(waterBlessingPrefab, transform.position, transform.rotation, null);
+        if(isFacingRight)
+        {
+            prefab.transform.Translate(waterBlessingOffset, 0, 0);
+        }
+        else
+        {
+            prefab.transform.Translate(-waterBlessingOffset, 0, 0);
+            prefab.transform.localScale = Vector3.Scale(prefab.transform.localScale, new Vector3(-1, 1, 1));
+        }
+
     }
 
     public override void takeDamage(int damage)
