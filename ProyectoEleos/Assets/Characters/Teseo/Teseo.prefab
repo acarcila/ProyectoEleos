@@ -342,7 +342,10 @@ MonoBehaviour:
   coolDownInvincible: 1
   waterBlessingPrefab: {fileID: 5727700367377517160, guid: 118109a798404554f96ea09fd93092a7,
     type: 3}
-  waterBlessingOffset: 1.4
+  waterBlessingOffset: {x: 1.4, y: 0}
+  thunderBlessingPrefab: {fileID: 6296064276277533390, guid: f1393fdef1fc21f469d4241e59effa20,
+    type: 3}
+  thunderBlessingOffset: {x: 0.9, y: 3.4}
 --- !u!114 &446796226
 MonoBehaviour:
   m_ObjectHideFlags: 0
