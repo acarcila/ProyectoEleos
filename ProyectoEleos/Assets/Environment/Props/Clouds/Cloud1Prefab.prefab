@@ -94,6 +94,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ec8ab61e7058a429d330ab5e33aa65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxSpeedX: 0.5
+  parallaxSpeedX: 0.3
   parallaxSpeedY: 0.1
   mainCamera: {fileID: 0}
